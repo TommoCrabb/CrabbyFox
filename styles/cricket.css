@@ -1,0 +1,35 @@
+/* Basic foreground color */
+body, h1, h2, h2 a, h3 a, h3, h4, h5, h6, table, tr, td, #all-content, .white-bg, .upcoming, .series-forms.fixture-filter div.btn a, .btn-load-more, .news-banner__details, .news-listing__link, .quick-single span, .quick-single span a, p.article-tag a, .article-latest-news .author-social p, .article-latest-news .author-social li, .article-latest-news .author-social i, h1:not(.news-header), #scorecards .scorecards__innings-tab, .live-match-panel.upcoming p.match-date, .series-landing .teams-standings ul.flags li .team-name {
+	color: #DDD;
+}
+
+/* Basic background color */
+body, table, tr, td, #all-content, .white-bg, .upcoming, .completed, .btn-load-more, .news-banner__details, .series-landing .teams-standings .teams-players li {
+	 background-color: #333;
+}
+
+.series-landing .series-standings .standings-row-result, #commentary .commentary__cell--default {
+	background-color: #222;
+}
+
+/* Links */
+h2 a:visited, h3 a:visited {
+	color: #FAF;
+}
+h2 a:hover, h3 a:hover {
+	color: #FF0;
+}
+
+/* Colour inversions */
+.radio-logos img, .quick-icon, .ball-icon, .bat-icon, .scorecards__datatable tbody, #secondary-nav {
+	filter: invert(100%)
+}
+
+.scorecards__datatable tbody img {
+	filter: invert(100%)
+}
+
+/* Hide ads */
+.ad-placement {
+	display: none;
+}

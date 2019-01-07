@@ -1,0 +1,110 @@
+{
+
+	"manifest_version": 2,
+	"name": "CrabbyFox",
+	"version": "1.0",
+
+	"description": "My first attempt at a Firefox extension. I expect it to try to do many things and fail at most of them.",
+
+	"icons": {
+		"48": "icons/icon-48.png"
+	},
+
+	"permissions": [
+		"<all_urls>",
+		"webRequest",
+		"theme",
+		"storage"
+	],
+
+	"browser_action": {
+		"default_icon": "icons/greasecrab-48.png",
+		"default_title": "GreaseCrab",
+		"default_popup": "popup/main.html"
+	},
+
+	"options_ui": {
+		"page": "options/main.html",
+		"open_in_tab": true,
+		"browser_style": false
+	},
+
+	"background": {
+		"scripts": ["background/cricket.js", "background/theme.js"]
+	},
+	
+	"content_scripts": [
+		// startpage, python.org, perldoc, w3school, youtube
+		{
+			"matches": ["<all_urls>"],
+			"js": ["widgets/common.js", "scripts/debug.js"]
+		},
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"js": ["scripts/yt.js", "scripts2/youtube.js"]
+		},
+		{
+			"matches": [
+				"*://*.stackexchange.com/*",
+				"*://*.stackoverflow.com/*",
+				"*://*.superuser.com/*",
+				"*://*.askubuntu.com/*",
+				"*://*.serverfault.com/*"
+			],
+			"css": ["styles/stackexchange.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.wikipedia.org/*"],
+			"css": ["styles/wikipedia.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.youtube.com/*"],
+			"css": ["styles2/youtube.css"]
+		},
+		{
+			"matches": ["*://*.github.com/*"],
+			"css": ["styles/github.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://developer.mozilla.org/*"],
+			"css": ["styles/mdn.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.duckduckgo.com/*"],
+			"css": ["styles/duckduckgo.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.sbs.com.au/ondemand/program/*"],
+			"js": ["scripts/sbs.js"]
+		},
+		{
+			"matches": ["*://*.hotstar.com/*"],
+			"js": ["scripts/hotstar.js"]
+		},
+		{
+			"matches": ["*://*.cricket.com.au/*"],
+			"js": ["scripts/cricket.js"],
+			"css": ["styles/cricket.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://*.cfake.com/*"],
+			"js": ["scripts/cfake.js"]
+		},
+		{
+			"matches": [
+				"*://*.paheal.net/*",
+				"*://*.rule34.xxx/*",
+				"*://*.rule34hentai.net/*",
+				"*://*.gelbooru.com/*"
+			],
+			"js": ["scripts/rule34.js"]
+		}
+	]
+
+}

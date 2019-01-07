@@ -1,0 +1,32 @@
+body, .reponav-item.selected, table.files td.icon, .text-gray-dark, .numbers-summary .nolink, .numbers-summary a, .numbers-summary .octicon, .text-emphasized, table.files td.message a, .reponav-item .octicon, table.files td.age, .commit-tease, .breadcrumb strong.final-path {
+	color: #DDD;
+}
+
+.reponav-item:focus {
+	color: #FFA;
+}
+
+.reponav-item {
+	color: #888;
+}
+
+body, .repohead.experiment-repo-nav, .Box, .Box-header, table.files, .commit-tease, .reponav-item.selected, .readme .markdown-body, .markdown-body table tr, .commit-tease-contributors, .file-header {
+	background-color: #333;
+}
+
+.markdown-body table tr:nth-child(2n), table.files tr.navigation-focus td, table.files tr[aria-selected="true"] td {
+	background-color: #323;
+}
+
+a, .btn-link, .numbers-summary a:hover, .reponav-item:hover, table.files td.message a:hover, .commit-tease-sha, .team-mention, .user-mention {
+	color: #ADF;
+}
+
+!important .text-gray-dark {
+	color: #DDD;
+}
+
+.blob-wrapper {
+	background-color: "#DDD";
+	filter: invert(100%);
+}

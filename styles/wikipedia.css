@@ -1,0 +1,45 @@
+/* Base text color */
+body, h1, h2, h3, h4, h5, h6, table, tr, td, caption, #mw-head, #content, #toc, #catlinks, .navbox-list, .navbox-group, #mw-panel .portal h3, .tocnumber, #contentSub {
+	color: #DDD;
+}
+
+/* Base background color */
+body, table, tr, td, th, .thumbcaption, .navbox.metadata, #mw-head, #content, #toc, #catlinks, .navbox-list, .navbox-group, #mw-panel {
+	background-color: #333;
+}
+
+/* InfoBox titles with colored backgrounds
+div.fn {
+	color: #000;
+}
+*/
+
+/* Images with transparency */
+a.image img {
+	background-color: #FFF;
+}
+
+/* Table headings */
+table.wikitable > * > tr > th, th[scope=row], .navbox-abovebelow, .navbox th, .navbox-title {
+	background-color: #334;
+}
+
+/* Links */
+a, .toctogglelabel, #mw-panel .portal .body li a, .mw-parser-output a.external {
+	color: #ADF;
+}
+#mw-panel .portal .body li a:visited, .mw-parser-output a.external:visited, a:visited {
+	color: #FAF;
+}
+a.new {
+	color: #FAA;
+}
+
+/* Wikipedia logo */
+#p-logo, .vectorTabs {
+	filter: invert(100%);
+}
+
+.vectorTabs {
+	border: solid black 1px;
+}

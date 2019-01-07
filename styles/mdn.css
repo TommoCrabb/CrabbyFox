@@ -1,0 +1,28 @@
+body, h2, header, #main-header,  .quick-links .toggle summary {
+	color: #DDD;
+}
+
+body, main, header, #main-header, .document-head, li.webextension-api-sidebar, .text-content table.fullwidth-table, .text-content .properties, h2, .text-content article[id="wikiArticle"] > .summary + h2, .text-content article[id="wikiArticle"] > blockquote + h2, .text-content article[id="wikiArticle"] > hr + h2 {
+	background-color: #333;
+}
+
+.note {
+	background-color: #332;
+}
+
+.warning {
+	background-color: #322;
+}
+
+.logo, .note::before, .text-content pre {
+	filter: invert(100%);
+}
+
+
+a, :not(pre) > * > code a, :not(pre) > code a, summary {
+	color: #ADF;
+}
+
+code, :not(pre) > * > code, :not(pre) > code {
+	background-color: rgba(0,0,0,0);
+}
