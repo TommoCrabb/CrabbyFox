@@ -28,3 +28,15 @@ var o = document.getElementById("options");
 o.addEventListener("click", function() {
 	browser.runtime.openOptionsPage();
 });
+
+// Get message from background script
+browser.runtime.onMessage.addListener(gotMessage);
+
+function gotMessage(input) {
+	var url = document.createElement("div");
+	url.innerHTML = input.message;
+	document.body.appendChild(url);
+}
+
+console.log(">>> Popup working");
+testScope("A message from the popup.");

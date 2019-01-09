@@ -14,13 +14,21 @@
 		"<all_urls>",
 		"webRequest",
 		"theme",
-		"storage"
+		"storage",
+		"tabs"
 	],
 
 	"browser_action": {
-		"default_icon": "icons/greasecrab-48.png",
-		"default_title": "GreaseCrab",
+		"default_icon": "icons/icon-48.png",
+		"default_title": "CrabbyFox",
 		"default_popup": "popup/main.html"
+	},
+
+	"page_action": {
+		"default_popup": "popup/main.html",
+		"show_matches" : ["*://*.duckduckgo.com/*"],
+		"default_title": "CrabbyFox",
+		"default_icon": "icons/icon-48.png"
 	},
 
 	"options_ui": {
@@ -30,7 +38,7 @@
 	},
 
 	"background": {
-		"scripts": ["background/cricket.js", "background/theme.js"]
+		"scripts": ["background/background.js", "background/theme.js"]
 	},
 	
 	"content_scripts": [
@@ -88,8 +96,12 @@
 		},
 		{
 			"matches": ["*://*.cricket.com.au/*"],
-			"js": ["scripts/cricket.js"],
 			"css": ["styles/cricket.css"],
+			"run_at": "document_start"
+		},
+		{
+			"matches": ["*://live.cricket.com.au/*"],
+			"js": ["scripts/cricket.js"],
 			"run_at": "document_start"
 		},
 		{
