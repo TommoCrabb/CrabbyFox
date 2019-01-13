@@ -3,7 +3,7 @@ console.log(">>> CRABBYFOX SCRIPT LOADED: modules/cfake.com/background.js");
 var cfake = {
 	filter : {
 		url : [
-			{ urlMatches : "^http://cfake\.com/picture/.*" }
+			{ urlMatches : "^http://cfake\.com/.*" }
 		]
 	}
 } ;

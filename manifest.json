@@ -95,17 +95,9 @@
 			"run_at": "document_start"
 		},
 		{
-			"matches": ["*://*.hotstar.com/*"],
-			"js": ["scripts/hotstar.js"]
-		},
-		{
 			"matches": ["*://*.cricket.com.au/*"],
 			"css": ["styles/cricket.css"],
 			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://*.cfake.com/*"],
-			"js": ["scripts/cfake.js"]
 		},
 		{
 			"matches": [
