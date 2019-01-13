@@ -44,6 +44,7 @@
 			"modules/sbs.com.au/background.js",
 			"modules/cfake.com/background.js",
 			"modules/cricket.com.au/background.js",
+			"modules/hotstar.com/background.js",
 			"background/theme.js"
 		]
 	},
