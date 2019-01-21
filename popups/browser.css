@@ -14,3 +14,11 @@ body {
 	color: #FFA;
 	border-color: #FFA;
 }
+
+.listItemText {
+	cursor: pointer;
+}
+.listItemText:hover {
+	color: #FFA;
+}
+
