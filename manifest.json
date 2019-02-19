@@ -40,74 +40,74 @@
 
 	"background": {
 		"scripts": [
-			//"background/background.js",
 			"modules/sbs.com.au/background.js",
 			"modules/cfake.com/background.js",
 			"modules/cricket.com.au/background.js",
 			"modules/hotstar.com/background.js",
+			"modules/womens.afl/background.js",
 			"background/theme.js"
 		]
-	},
+	}
 	
-	"content_scripts": [
-		// startpage, python.org, perldoc, w3school, youtube
-		{
-			"matches": ["<all_urls>"],
-			"js": ["widgets/common.js", "scripts/debug.js"]
-		},
-		{
-			"matches": ["*://*.youtube.com/*"],
-			"js": ["scripts/yt.js", "scripts2/youtube.js"]
-		},
-		{
-			"matches": [
-				"*://*.stackexchange.com/*",
-				"*://*.stackoverflow.com/*",
-				"*://*.superuser.com/*",
-				"*://*.askubuntu.com/*",
-				"*://*.serverfault.com/*"
-			],
-			"css": ["styles/stackexchange.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://*.wikipedia.org/*"],
-			"css": ["styles/wikipedia.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://*.youtube.com/*"],
-			"css": ["styles2/youtube.css"]
-		},
-		{
-			"matches": ["*://*.github.com/*"],
-			"css": ["styles/github.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://developer.mozilla.org/*"],
-			"css": ["styles/mdn.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://*.duckduckgo.com/*"],
-			"css": ["styles/duckduckgo.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": ["*://*.cricket.com.au/*"],
-			"css": ["styles/cricket.css"],
-			"run_at": "document_start"
-		},
-		{
-			"matches": [
-				"*://*.paheal.net/*",
-				"*://*.rule34.xxx/*",
-				"*://*.rule34hentai.net/*",
-				"*://*.gelbooru.com/*"
-			],
-			"js": ["scripts/rule34.js"]
-		}
-	]
+	// "content_scripts": [
+	// 	// startpage, python.org, perldoc, w3school, youtube
+	// 	{
+	// 		"matches": ["<all_urls>"],
+	// 		"js": ["widgets/common.js", "scripts/debug.js"]
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.youtube.com/*"],
+	// 		"js": ["scripts/yt.js", "scripts2/youtube.js"]
+	// 	},
+	// 	{
+	// 		"matches": [
+	// 			"*://*.stackexchange.com/*",
+	// 			"*://*.stackoverflow.com/*",
+	// 			"*://*.superuser.com/*",
+	// 			"*://*.askubuntu.com/*",
+	// 			"*://*.serverfault.com/*"
+	// 		],
+	// 		"css": ["styles/stackexchange.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.wikipedia.org/*"],
+	// 		"css": ["styles/wikipedia.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.youtube.com/*"],
+	// 		"css": ["styles2/youtube.css"]
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.github.com/*"],
+	// 		"css": ["styles/github.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": ["*://developer.mozilla.org/*"],
+	// 		"css": ["styles/mdn.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.duckduckgo.com/*"],
+	// 		"css": ["styles/duckduckgo.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": ["*://*.cricket.com.au/*"],
+	// 		"css": ["styles/cricket.css"],
+	// 		"run_at": "document_start"
+	// 	},
+	// 	{
+	// 		"matches": [
+	// 			"*://*.paheal.net/*",
+	// 			"*://*.rule34.xxx/*",
+	// 			"*://*.rule34hentai.net/*",
+	// 			"*://*.gelbooru.com/*"
+	// 		],
+	// 		"js": ["scripts/rule34.js"]
+	// 	}
+	// ]
 
 }

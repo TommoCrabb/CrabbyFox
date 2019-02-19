@@ -1,32 +1,5 @@
 console.log(">>> CRABBYFOX SCRIPT: background.js");
 
-//////////////////////////////////////////////////////
-/*
-browser.runtime.onMessage.addListener(handleMessage);
-
-function handleMessage(message, sender, sendResponse) {
-	console.log(">>> Message received. Running " + message.run);
-	switch (message.run) {
-	case "cricket":
-		var reply = cricket();
-		break;
-	}
-	sendResponse(reply);
-}
-
-function cricket() {
-	if ( browser.webRequest.onBeforeRequest.hasListener(cricketListener) == true) {
-		return { message : "Already listening for playlist URL." };
-	} else {
-		browser.webRequest.onBeforeRequest.addListener(
-			cricketListener,
-*///			{urls: ["*://*.akamaihd.net/*/ap-southeast-2/5833133821001/profile_*/chunklist_dvr.m3u8"]}
-/*		);
-		return { message : "Started listening for playlist URL." };
-	}
-}
-*/
-
 browser.webRequest.onBeforeRequest.addListener(
 	cricketListener,
 	{urls: ["*://*.akamaihd.net/*/ap-southeast-2/5833133821001/profile_*/chunklist_dvr.m3u8*"]}
