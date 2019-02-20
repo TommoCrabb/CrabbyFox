@@ -45,16 +45,3 @@ browser.webNavigation.onDOMContentLoaded.addListener(
 	aflw.init,
 	aflw.filter
 );
-
-/*
-browser.runtime.onMessage.addListener(
-	function(message, sender, sendResponse){
-		if (message.id != "womens.afl") return;
-		if (message.message == "gimme playlist url") {
-			sendResponse({
-				message : aflw.playlist
-			});
-		}
-	}
-);
-*/

@@ -47,7 +47,11 @@
 			"modules/womens.afl/background.js",
 			"background/theme.js"
 		]
-	}
+	},
+
+	"web_accessible_resources": [
+		"modules/womens.afl/injected.js"
+	],
 	
 	// "content_scripts": [
 	// 	// startpage, python.org, perldoc, w3school, youtube
